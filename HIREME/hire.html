@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="hireme.css">
+    <link rel="shortcut icon" href="/HOME/assets/IMG_20250407_173309-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <canvas id="constellation"></canvas>
+
+    <main class="hireme-container">
+        <div class="modal-content">
+            <h2>Let's Work Together!</h2>
+            <p>Fill out the form and I'll respond within 24 hours</p>
+            
+            <form id="hire-form" action="https://formspree.io/f/movdqwvb" method="POST">
+                <input type="hidden" name="_subject" value="New Hire Request">
+                <input type="text" name="name" placeholder="Full Name*" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="email" name="email" placeholder="Email*" required>
+                <input type="text" name="project" placeholder="Project Title*" required>
+                <textarea name="details" placeholder="Project Details*" required></textarea>
+                <select name="budget">
+                    <option value="">Budget Range (Optional)</option>
+                    <option value="$500-$1000">$50-$100</option>
+                    <option value="$1000-$5000">$100-$500</option>
+                    <option value="$500-$1000">$500-$1000</option>
+                    <option value="$1000-$5000">$1000-$5000</option>
+                    <option value="$5000+">$5000+</option>
+                </select>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            
+            <div id="form-status"></div>
+        </div>
+    </main>
+
+    <script src="hireme.js"></script>
+
+    <script>
+        const canvas = document.getElementById("constellation");
+        const ctx = canvas.getContext("2d");
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+        
+        const particles = [];
+        const particleCount = 100;
+        
+        const mouse = {
+            x: null,
+            y: null,
+            radius: 120
+        };
+        
+        window.addEventListener("resize", () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+        
+        window.addEventListener("mousemove", event => {
+            mouse.x = event.clientX;
+            mouse.y = event.clientY;
+        });
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 1.5;
+                this.vy = (Math.random() - 0.5) * 1.5;
+                this.radius = 2;
+            }
+        
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+        
+                if (this.x <= 0 || this.x >= width) this.vx *= -1;
+                if (this.y <= 0 || this.y >= height) this.vy *= -1;
+            }
+        
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = "#4e9af1";
+                ctx.fill();
+            }
+        }
+        
+        function connectParticles() {
+            for (let a = 0; a < particleCount; a++) {
+                for (let b = a; b < particleCount; b++) {
+                    const dx = particles[a].x - particles[b].x;
+                    const dy = particles[a].y - particles[b].y;
+                    const distance = dx * dx + dy * dy;
+        
+                    if (distance < 16000) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(78, 154, 241, ${1 - distance / 16000})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            for (let particle of particles) {
+                particle.update();
+                particle.draw();
+            }
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+        
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+        
+        animate();
+        </script>
+        
+</body>
+</html>

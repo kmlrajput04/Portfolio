@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs| Kamal Rajput - Full Stack Developer</title>
+    <link rel="shortcut icon" href="/HOME/assets/IMG_20250407_173309-removebg-preview.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Header with Improved Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <nav class="nav-links">
+                <a href="/HOME/home.html" class="nav-link">Home</a>
+                <a href="/ABOUT ME/about.html" class="nav-link">About</a>
+                <a href="/SERVICE/service.html" class="nav-link">Services</a>
+                <a href="/BLOGS/blog.html" class="nav-link active">Insighgts</a>
+                <a href="/PROJECTS/project.html" class="nav-link">Projects</a>
+                <a href="/CONTACT/contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="/HIREME/hire.html" class="hire-btn">
+                <span>Hire Me</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Developer Insights</h1>
+                <p class="hero-subtitle">Deep dives into modern web technologies, architecture patterns, and development best practices</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Search articles..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <div class="blog-content-container">
+            <!-- Sidebar with Filters -->
+            <aside class="blog-sidebar">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="category-list">
+                        <li class="category-item active" data-category="all">All Articles</li>
+                        <li class="category-item" data-category="frontend">Frontend</li>
+                        <li class="category-item" data-category="backend">Backend</li>
+                        <!-- <li class="category-item" data-category="architecture">Architecture</li> -->
+                        <li class="category-item" data-category="devops">DevOps</li>
+                        <li class="category-item" data-category="career">Career Growth</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Popular Tags</h3>
+                    <div class="tag-cloud">
+                        <span class="tag" data-tag="react">React</span>
+                        <span class="tag" data-tag="node">Node.js</span>
+                        <span class="tag" data-tag="performance">Performance</span>
+                        <span class="tag" data-tag="scalability">Scalability</span>
+                        <span class="tag" data-tag="security">Security</span>
+                        <span class="tag" data-tag="typescript">TypeScript</span>
+                        <span class="tag" data-tag="testing">Testing</span>
+                        <span class="tag" data-tag="aws">AWS</span>
+                    </div>
+                </div>
+<!--                 
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Newsletter</h3>
+                    <p class="newsletter-text">Get the latest articles delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div> -->
+            </aside>
+
+            <!-- Main Blog Content -->
+            <div class="blog-articles">
+
+                <!-- Additional Articles 1 -->
+                <article class="blog-article" data-category="frontend" data-tags="react,performance,typescript">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="React Performance">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Frontend</span>
+                            <span class="article-date">May 28, 2023</span>
+                            <!-- <span class="article-reading-time">9 min read</span> -->
+                        </div>
+                        <h2 class="article-title">Mastering React Performance</h2>
+                        <p class="article-excerpt">Beyond the basics of React.memo and useMemo, this article dives into advanced patterns for optimizing React applications. We'll cover concurrent rendering, virtualization techniques, and how to properly measure performance...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#React</span>
+                                <span>#Performance</span>
+                                <span>#TypeScript</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog1">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- article 2 -->
+                <article class="blog-article featured" data-category="frontend" data-tags="ai,machine-learning,web-development">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="AI in Web Development">
+                        <span class="featured-badge">Featured</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Frontend</span>
+                            <span class="article-date">June 22, 2023</span>
+                            <!-- <span class="article-reading-time">15 min read</span> -->
+                        </div>
+                        <h2 class="article-title">AI in Web Development: The Next Frontier</h2>
+                        <p class="article-excerpt">Discover how artificial intelligence is revolutionizing web development. From AI-powered code generation to intelligent user interfaces and automated testing, we explore the cutting-edge applications of AI that every developer should know about...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#AI</span>
+                                <span>#MachineLearning</span>
+                                <span>#WebDevelopment</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog2">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- article 3 -->
+                <article class="blog-article" data-category="devops" data-tags="ci-cd,cloud,automation">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="DevOps Pipeline">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">DevOps</span>
+                            <span class="article-date">May 15, 2023</span>
+                            <!-- <span class="article-reading-time">11 min read</span> -->
+                        </div>
+                        <h2 class="article-title">DevOps Best Practices for Modern Teams</h2>
+                        <p class="article-excerpt">Implementing DevOps effectively requires more than just tools. This guide covers cultural shifts, automation strategies, monitoring best practices, and how to build a robust CI/CD pipeline that accelerates delivery while maintaining quality...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#CI/CD</span>
+                                <span>#Cloud</span>
+                                <span>#Automation</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog3">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- article 4 -->
+                <article class="blog-article" data-category="frontend" data-tags="css,layout,design">
+                    <div class="article-image">
+                        <img src="https://i.ytimg.com/vi/VmHO_AjxHnQ/maxresdefault.jpg" alt="CSS Grid Layout">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Frontend</span>
+                            <span class="article-date">April 30, 2023</span>
+                            <!-- <span class="article-reading-time">8 min read</span> -->
+                        </div>
+                        <h2 class="article-title">The CSS Grid Revolution</h2>
+                        <p class="article-excerpt">CSS Grid has fundamentally changed how we approach web layouts. Learn advanced grid techniques, how to combine it with Flexbox, and real-world examples of complex responsive layouts that were previously difficult or impossible to create...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#CSS</span>
+                                <span>#Layout</span>
+                                <span>#Design</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog4">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- article 5  -->
+                <article class="blog-article" data-category="backend" data-tags="node,databases,scalability">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Backend Architecture">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Backend</span>
+                            <span class="article-date">July 10, 2023</span>
+                            <!-- <span class="article-reading-time">14 min read</span> -->
+                        </div>
+                        <h2 class="article-title">Building High-Performance Backends with Node.js</h2>
+                        <p class="article-excerpt">Node.js powers some of the fastest backends, but performance bottlenecks can still occur. Learn advanced techniques like connection pooling, caching strategies, database optimization, and load balancing to build scalable and efficient APIs...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#NodeJS</span>
+                                <span>#Databases</span>
+                                <span>#Scalability</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog5">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- article 6 -->
+                <article class="blog-article featured" data-category="career" data-tags="webdev,soft-skills,jobs">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Career Growth in Tech">
+                        <span class="featured-badge">Featured</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Career</span>
+                            <span class="article-date">August 5, 2023</span>
+                            <!-- <span class="article-reading-time">12 min read</span> -->
+                        </div>
+                        <h2 class="article-title">From Junior to Senior: Navigating Web Development Career Growth</h2>
+                        <p class="article-excerpt">Climbing the ladder in web development isn't just about coding skills. This guide covers mentorship, specialization paths, negotiation strategies, and how to transition from a junior developer to a tech lead or architect...</p>
+                        <div class="article-footer">
+                            <div class="article-tags">
+                                <span>#WebDev</span>
+                                <span>#SoftSkills</span>
+                                <span>#Jobs</span>
+                            </div>
+                            <a href="#" class="read-more-btn" id="blog6">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- More articles would follow the same structure -->
+                
+                <!-- Pagination
+                <div class="pagination">
+                    <button class="pagination-btn disabled">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <div class="page-numbers">
+                        <span class="page-number active">1</span>
+                        <span class="page-number">2</span>
+                        <span class="page-number">3</span>
+                        <span class="ellipsis">...</span>
+                        <span class="page-number">8</span>
+                    </div>
+                    <button class="pagination-btn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- start footer section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <p class="footer-tagline">Turning Ideas Into Digital Reality</p>
+            <p class="footer-credit">Crafted with <span class="heart">♥</span> by kamal Rajput</p>
+          </div>
+    
+          <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+            </svg>
+          </div>
+        </div>
+      </footer>
+
+    <script src="blog.js"></script>
+    <script src="blog1.js"></script>
+    <script src="blog2.js"></script>
+    <script src="blog3.js"></script>
+    <script src="blog4.js"></script>
+    <script src="blog5.js"></script>
+    <script src="blog6.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+:root {
+  --primary: #4e9af1;
+  --secondary: #6c5ce7;
+  --dark: #121420;
+  --dark-secondary: #1e1f2e;
+  --dark-tertiary: #2a2c39;
+  --light: #ffffff;
+  --gray: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  line-height: 1.6;
+}
+
+
+.hireme-container {
+  padding: 100px 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--dark-tertiary);
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(78, 154, 241, 0.3);
+}
+
+.modal-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.modal-content p {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, select {
+  padding: 1rem;
+  background: rgba(30, 31, 46, 0.7);
+  border: 1px solid rgba(78, 154, 241, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(78, 154, 241, 0.2);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(78, 154, 241, 0.4);
+}
+
+#form-status {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
+}
+
+#form-status.success {
+  display: block;
+  background: rgba(40, 167, 69, 0.2);
+  border: 1px solid #28a745;
+  color: #28a745;
+}
+
+#form-status.error {
+  display: block;
+  background: rgba(220, 53, 69, 0.2);
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .modal-content {
+      padding: 1.5rem;
+  }
+  
+  .modal-content h2 {
+      font-size: 2rem;
+  }
+}
+
+:root {
+  --primary: #4e9af1;
+  --secondary: #6c5ce7;
+  --dark: #121420;
+  --dark-secondary: #1e1f2e;
+  --dark-tertiary: #2a2c39;
+  --light: #ffffff;
+  --gray: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated Background Elements */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(60px);
+  opacity: 0.15;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background: var(--primary);
+  top: -100px;
+  left: -100px;
+  animation: float 15s infinite alternate ease-in-out;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  background: var(--secondary);
+  bottom: -150px;
+  right: -100px;
+  animation: float 18s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(50px, 80px) rotate(180deg);
+  }
+  100% {
+    transform: translate(-30px, -50px) rotate(360deg);
+  }
+}
+
+/* Pulsing Gradient Effect */
+.navbar {
+  background-color: var(--dark-tertiary);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  animation: pulseGlow 8s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 2px 10px rgba(78, 154, 241, 0.1);
+  }
+  100% {
+    box-shadow: 0 2px 20px rgba(78, 154, 241, 0.3);
+  }
+}
+
+/* Floating Particles */
+.particle {
+  position: fixed;
+  background: rgba(78, 154, 241, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+/* Enhanced Form Focus Effects */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(78, 154, 241, 0.2);
+  animation: inputPulse 2s infinite;
+}
+
+@keyframes inputPulse {
+  0% {
+    box-shadow: 0 0 0 3px rgba(78, 154, 241, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(78, 154, 241, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(78, 154, 241, 0.2);
+  }
+}
+
+/* Button Hover Effects */
+.submit-btn:hover, .hire-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(78, 154, 241, 0.4);
+  animation: btnShine 3s infinite;
+}
+
+@keyframes btnShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Modal Entrance Animation */
+.modal-content {
+  background: var(--dark-tertiary);
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(78, 154, 241, 0.3);
+  animation: modalEntrance 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+@keyframes modalEntrance {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body::before, body::after {
+    display: none;
+  }
+  
+  .navbar {
+    animation: none;
+  }
+}
+
+#constellation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
