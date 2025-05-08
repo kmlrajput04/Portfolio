@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               </div>
                           </div>
                           <div style="flex: 1;">
-                              <img src="/blogs images/Screenshot 2025-04-24 122901.png" alt="Performance metrics dashboard" 
+                              <img src="/portfolio/blogs images/Screenshot 2025-04-24 122901.png" alt="Performance metrics dashboard" 
                               style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
                           </div>
                       </div>
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
                           margin: 2.5rem 0 1rem;
                       ">Performance Optimization Spectrum</h3>
                       
-                      <img src="/blogs images/Screenshot 2025-04-24 122928.png" alt="React optimization techniques spectrum" 
+                      <img src="/portfolio/blogs images/Screenshot 2025-04-24 122928.png" alt="React optimization techniques spectrum" 
                       style="width: 100%; margin-bottom: 2rem; border-radius: var(--border-radius);">
                       
                       <p style="margin-bottom: 1.5rem;">
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               </div>
                           </div>
                           <div style="flex: 1;">
-                              <img src="/blogs images/Screenshot 2025-04-24 181319.png" alt="Concurrent rendering flow diagram" 
+                              <img src="/portfolio/blogs images/Screenshot 2025-04-24 181319.png" alt="Concurrent rendering flow diagram" 
                               style="width: 100%; border-radius: var(--border-radius);">
                           </div>
                       </div>
@@ -598,7 +598,7 @@ return &lt;h1&gt;{user.name}&lt;/h1&gt;;
                               </div>
                           </div>
                           <div style="flex: 1;">
-                              <img src="/blogs images/Advanced React Performance Optimization Techniques - visual selection (3).png" alt="Virtualization architecture diagram" 
+                              <img src="/portfolio/blogs images/Advanced React Performance Optimization Techniques - visual selection (3).png" alt="Virtualization architecture diagram" 
                               style="width: 100%; border-radius: var(--border-radius);">
                           </div>
                       </div>
@@ -872,9 +872,9 @@ const App = () => (
                                       <li style="margin-bottom: 0.5rem;">Implement scroll position restoration</li>
                                       <li>Cache loaded data</li>
                                   </ul>
-                                  <img src="/blogs images/Screenshot 2025-04-24 180603.png" alt="Infinite loading diagram" 
+                                  <img src="/portfolio/blogs images/Screenshot 2025-04-24 180603.png" alt="Infinite loading diagram" 
                                   style="width: 100%; border-radius: calc(var(--border-radius) - 2px);">
-                                   <img src="/blogs images/Advanced React Performance Optimization Techniques - visual selection (2).png" alt="Infinite loading diagram" 
+                                   <img src="/portfolio/blogs images/Advanced React Performance Optimization Techniques - visual selection (2).png" alt="Infinite loading diagram" 
                                   style="width: 100%; border-radius: calc(var(--border-radius) - 2px);">
                               </div>
                               <div style="flex: 1;">
@@ -983,7 +983,7 @@ return (
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 175703.png" alt="React performance measurement tools" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 175703.png" alt="React performance measurement tools" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -1022,7 +1022,7 @@ return (
                     </p>
                 </div>
                 <div style="flex: 1;">
-                    <img src="/blogs images/Advanced React Performance Optimization Techniques - visual selection (1).png" alt="React Profiler screenshot" 
+                    <img src="/portfolio/blogs images/Advanced React Performance Optimization Techniques - visual selection (1).png" alt="React Profiler screenshot" 
                     style="width: 100%; border-radius: calc(var(--border-radius) - 2px);">
                 </div>
             </div>
@@ -1197,7 +1197,7 @@ getLCP(console.log);</code></pre>
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Advanced React Performance Optimization Techniques - visual selection.png" alt="Bundle size analysis chart" 
+                <img src="/portfolio/blogs images/Advanced React Performance Optimization Techniques - visual selection.png" alt="Bundle size analysis chart" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -1391,7 +1391,7 @@ function prefetchComponent() {
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 173029.png" alt="React component render flow" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 173029.png" alt="React component render flow" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -1562,7 +1562,7 @@ const FancyInput = forwardRef((props, ref) => {
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 123016.png" alt="Context re-render flow" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 123016.png" alt="Context re-render flow" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -1724,7 +1724,7 @@ function UserName() {
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 123043.png" alt="TypeScript compilation process" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 123043.png" alt="TypeScript compilation process" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -1892,7 +1892,7 @@ interface User {
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 123103.png" alt="Common React anti-patterns" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 123103.png" alt="Common React anti-patterns" 
                 style="width: 100%; height:500px; border-radius: var(--border-radius);">
             </div>
         </div>
@@ -2131,7 +2131,7 @@ const handleClick = useCallback(() => {
                 </div>
             </div>
             <div style="flex: 1;">
-                <img src="/blogs images/Screenshot 2025-04-24 123126.png" alt="Optimization priority pyramid" 
+                <img src="/portfolio/blogs images/Screenshot 2025-04-24 123126.png" alt="Optimization priority pyramid" 
                 style="width: 100%; border-radius: var(--border-radius);">
             </div>
         </div>

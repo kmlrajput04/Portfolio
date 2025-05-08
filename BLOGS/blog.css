@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px #fff;
+    box-shadow: 0 10px 20px #fff;
 }
 
 .nav-container {

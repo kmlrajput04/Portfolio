@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["React", "Node.js", "MongoDB", "Express", "Redux", "Stripe"],
             githubUrl: "https://github.com/yourusername/ecommerce-platform",
             images: [
-                "/HOME/assets/e-commerce/image.png",
+                "/portfolio/HOME/assets/e-commerce/image.png",
                 "assets/e-commerce/screen1.png",
                 "assets/e-commerce/screen2.png",
                 "assets/e-commerce/screen3.png"
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["Vue.js", "Firebase", "Firestore", "WebSockets", "Vue.Draggable"],
             githubUrl: "https://github.com/yourusername/task-manager",
             images: [
-                "/HOME/assets/task management/image.png",
+                "/portfolio/HOME/assets/task management/image.png",
                 "assets/task-management/screen1.png",
                 "assets/task-management/screen2.png",
                 "assets/task-management/screen3.png"
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["HTML5", "CSS3", "JavaScript", "Three.js", "GSAP"],
             githubUrl: "https://github.com/yourusername/portfolio-website",
             images: [
-               "/HOME/assets/portfolio website/image.png", 
+               "/portfolio/HOME/assets/portfolio website/image.png", 
                 "assets/portfolio-website/screen1.png",
                 "assets/portfolio-website/screen2.png",
                 "assets/portfolio-website/screen3.png"
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["React", "OpenWeatherMap API", "Mapbox GL JS", "Chart.js", "Service Workers"],
             githubUrl: "https://github.com/yourusername/weather-dashboard",
             images: [
-               "/HOME/assets/weather dashboard/image.png",
+               "/portfolio/HOME/assets/weather dashboard/image.png",
                 "assets/weather-dashboard/screen1.png",
                 "assets/weather-dashboard/screen2.png",
                 "assets/weather-dashboard/screen3.png"
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["React Native", "Node.js", "PostgreSQL", "PWA", "JWT"],
             githubUrl: "https://github.com/yourusername/fitness-tracker",
             images: [
-               "/HOME/assets/health tracker/image.png",
+               "/portfolio/HOME/assets/health tracker/image.png",
                 "assets/health-tracker/screen1.png",
                 "assets/health-tracker/screen2.png",
                 "assets/health-tracker/screen3.png"
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             techStack: ["Python", "Transformers", "React", "REST API", "NLTK"],
             githubUrl: "https://github.com/yourusername/ai-chatbot",
             images: [
-               "/HOME/assets/AI chatbot/image.png",
+               "/portfolio/HOME/assets/AI chatbot/image.png",
                 "assets/AI-chatbot/screen1.png",
                 "assets/AI-chatbot/screen2.png",
                 "assets/AI-chatbot/screen3.png"
